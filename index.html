@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Быки и коровы</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="script.js"></script>
+        <link rel="shortcut icon" href="img/short.png">
+        <link href="https://fonts.googleapis.com/css?family=Jomolhari|Merriweather&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 offset-2">
+                    <div class="card mt-4">
+                        <div class="card-header text-center">
+                            <h2 id="H">Быки и коровы</h2>
+                            <h5><a class="float-right" href="index2.html">Правила</a></h5>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="h2">
+                                <span class="float-left mr-2">Введите число
+                                </span>
+                                <input id="inpA" oninput="validate();" class="col-lg-3 form-control">
+                                <div class="container col-lg-5 mt-2">
+                                    <button id="btnOk" class="btn btn-success" onclick="Move()">Ok</button>
+                                    <button id="btnRes" class="btn btn-info" onclick="restart();">Restart</button>
+                                </div>
+                            </h2>
+                        <div class="card-footer">
+                            <p id="pLog">
+                                Игра началась!
+                            </p>
+                            <table class="table table-bordered table-dark width-700px text-center" id="table">
+                                    <thead >
+                                      <tr>
+                                        <th scope="col">Ход</th>
+                                        <th scope="col">Число</th>
+                                        <th scope="col">Быки</th>
+                                        <th scope="col">Коровы</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody id="parentId">
+                                      <tr >
+                                        <td scope="row" ><b>0</b></td>
+                                        <td>-</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
